@@ -1,0 +1,9 @@
+N = int(input())
+
+for n in range(N):
+  word = input()
+  count = len(word)-2
+  if len(word) > 10:
+    print(word[0] + str(count) + word[-1])
+  else:
+    print(word)
