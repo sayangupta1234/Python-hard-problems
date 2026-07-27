@@ -1,0 +1,3 @@
+N = int(input())
+minstep = N//5+1
+print(minstep)
