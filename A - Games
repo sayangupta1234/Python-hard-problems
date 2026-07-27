@@ -1,0 +1,16 @@
+N = int(input())
+
+home = []
+away = []
+
+for n in range(N):
+    h, a = map(int, input().split())
+    home.append(h)
+    away.append(a)
+
+ans = 0
+
+for h in home:
+    ans += away.count(h)
+
+print(ans)
