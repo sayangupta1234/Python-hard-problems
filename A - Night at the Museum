@@ -1,0 +1,11 @@
+arr = input()
+
+current = 'a'
+moves = 0
+
+for ch in arr:
+    diff = max(ord(ch), ord(current)) - min(ord(ch), ord(current))
+    moves += min(diff, 26 - diff)
+    current = ch
+
+print(moves)
